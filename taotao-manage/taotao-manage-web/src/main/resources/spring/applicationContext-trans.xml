@@ -11,6 +11,7 @@
 	<import resource="applicationContext-dao.xml"/>
 	<import resource="applicationContext-service.xml"/>
 
+
 	<!-- 事务管理器 -->
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
