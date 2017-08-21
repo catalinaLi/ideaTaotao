@@ -14,4 +14,5 @@ IDEA上完成淘淘商城
   Ctrl + Alt + L            查找文件
   Ctrl + Alt + Enter        将光标移到当前行的上一行
   Shift + Enter             将光标移到当前行的下一行
+  Alt + Shift + Up/Down     上/下移一行
 ```
