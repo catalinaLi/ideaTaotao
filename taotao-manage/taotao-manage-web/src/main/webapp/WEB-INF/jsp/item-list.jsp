@@ -41,6 +41,7 @@
     },{
         text:'编辑',
         iconCls:'icon-edit',
+
         handler:function(){
         	var ids = getSelectionsIds();
         	if(ids.length == 0){
