@@ -2,6 +2,7 @@ package top.catalinali.service.impl;
 
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import top.catalinali.common.pojo.PictureResult;
 import top.catalinali.common.util.ExceptionUtil;
@@ -18,6 +19,7 @@ import top.catalinali.service.PictureService;
  * Created at:	2017/8/23
  * </pre>
  */
+@Service
 public class PictureServiceImpl implements PictureService {
 
     @Value("${FTP_ADDRESS}")

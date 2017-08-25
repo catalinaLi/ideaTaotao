@@ -1,6 +1,6 @@
 
 ## 目标
-IDEA上完成淘淘商城
+在IDEA上使用Git+Github完成淘淘商城
 ## IDEA学习笔记
 
 ```
@@ -15,9 +15,14 @@ IDEA上完成淘淘商城
   Ctrl + Alt + Enter        将光标移到当前行的上一行
   Shift + Enter             将光标移到当前行的下一行
   Alt + Shift + Up/Down     上/下移一行
+  Alt +	鼠标左键			上下拖动 多行编辑
+  Alt + Shift + 鼠标左键	多行选择 自定义多行编辑
 ```
+
 ## Git学习笔记
 ### Git指令
+
+```
 git diff readme.txt 		在git add之前使用此命令可以查看文件修改的内容 
 git log						显示从最近到最远的提交日志		 查看提交历史
 git reflog	 				可以查看所有分支的所有操作记录   查看命令历史
@@ -26,6 +31,7 @@ git reset --hard HEAD^ 		回退到上一个版本(HEAD表示当前版本)
 git reset --hard commitId	指定回到某个版本
 git checkout --fileName		就是让这个文件回到最近一次git commit或git add时的状态。
 git reset HEAD fileName		把暂存区的修改撤销掉，重新放回工作区
+```
 
 ### Git名词解释
 Git工作区（Working Directory）:就是你在电脑里能看到的目录。
