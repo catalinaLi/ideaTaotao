@@ -12,11 +12,12 @@
   Ctrl + Shift + Z          取消撤销 （必备）
   Ctrl + Shift + N          查找类 
   Ctrl + Alt + L            查找文件
+  Ctrl + F4                 关闭当前窗口
   Ctrl + Alt + Enter        将光标移到当前行的上一行
   Shift + Enter             将光标移到当前行的下一行
   Alt + Shift + Up/Down     上/下移一行
-  Alt +	鼠标左键			上下拖动 多行编辑
-  Alt + Shift + 鼠标左键	多行选择 自定义多行编辑
+  Alt +	鼠标左键			    上下拖动 多行编辑
+  Alt + Shift + 鼠标左键	    多行选择 自定义多行编辑
 ```
 
 ## Git学习笔记
