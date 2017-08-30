@@ -12,12 +12,11 @@
   Ctrl + Shift + Z          取消撤销 （必备）
   Ctrl + Shift + N          查找类 
   Ctrl + Alt + L            查找文件
-  Ctrl + F4                 关闭当前窗口
   Ctrl + Alt + Enter        将光标移到当前行的上一行
   Shift + Enter             将光标移到当前行的下一行
   Alt + Shift + Up/Down     上/下移一行
-  Alt +	鼠标左键			    上下拖动 多行编辑
-  Alt + Shift + 鼠标左键	    多行选择 自定义多行编辑
+  Alt +	鼠标左键			上下拖动 多行编辑
+  Alt + Shift + 鼠标左键	多行选择 自定义多行编辑
 ```
 
 ## Git学习笔记
@@ -32,6 +31,18 @@ git reset --hard HEAD^ 		回退到上一个版本(HEAD表示当前版本)
 git reset --hard commitId	指定回到某个版本
 git checkout --fileName		就是让这个文件回到最近一次git commit或git add时的状态。
 git reset HEAD fileName		把暂存区的修改撤销掉，重新放回工作区
+- 分支操作
+git branch					查看分支
+
+git branch <name>			创建分支
+
+git checkout <name>			切换分支
+
+git checkout -b <name>		创建+切换分支
+
+git merge <name>			合并某分支到当前分支
+
+git branch -d <name>		删除分支
 ```
 
 ### Git名词解释
@@ -100,3 +111,9 @@ git pull origin master
 	git remote -v
 ```
 
+### 将本地内容推送到Github
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
+
+此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改；
