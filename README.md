@@ -31,6 +31,18 @@ git reset --hard HEAD^ 		回退到上一个版本(HEAD表示当前版本)
 git reset --hard commitId	指定回到某个版本
 git checkout --fileName		就是让这个文件回到最近一次git commit或git add时的状态。
 git reset HEAD fileName		把暂存区的修改撤销掉，重新放回工作区
+- 分支操作
+git branch					查看分支
+
+git branch <name>			创建分支
+
+git checkout <name>			切换分支
+
+git checkout -b <name>		创建+切换分支
+
+git merge <name>			合并某分支到当前分支
+
+git branch -d <name>		删除分支
 ```
 
 ### Git名词解释
@@ -99,3 +111,9 @@ git pull origin master
 	git remote -v
 ```
 
+### 将本地内容推送到Github
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
+
+此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改；
