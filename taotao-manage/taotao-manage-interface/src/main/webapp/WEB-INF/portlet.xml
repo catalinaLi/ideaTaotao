@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app
+    xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+    version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd
+                        http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+    <portlet>
+        <description>Write here a short description about your portlet.</description>
+        <portlet-name>taotao-manage-interface</portlet-name>
+        <display-name>taotao-manage-interface Portlet</display-name>
+
+        <portlet-class>top.catalinali.taotao-manage-interface</portlet-class>
+
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>VIEW</portlet-mode>
+        </supports>
+
+        <supported-locale>en</supported-locale>
+
+        <portlet-info>
+            <title>Put the portlet title here</title>
+            <short-title>Portlet Short Title</short-title>
+            <keywords>put keywords here</keywords>
+        </portlet-info>
+    </portlet>
+</portlet-app>

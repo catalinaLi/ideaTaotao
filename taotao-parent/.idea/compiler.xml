@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="taotao-common" />
+        <module name="taotao-manage-interface" />
+        <module name="taotao-manage-mapper" />
+        <module name="taotao-manage-pojo" />
+        <module name="taotao-manage-service" />
+        <module name="taotao-manage-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="taotao-common" target="1.7" />
+      <module name="taotao-manage" target="1.7" />
+      <module name="taotao-manage-interface" target="1.7" />
+      <module name="taotao-manage-mapper" target="1.7" />
+      <module name="taotao-manage-pojo" target="1.7" />
+      <module name="taotao-manage-service" target="1.7" />
+      <module name="taotao-manage-web" target="1.7" />
+      <module name="taotao-parent" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

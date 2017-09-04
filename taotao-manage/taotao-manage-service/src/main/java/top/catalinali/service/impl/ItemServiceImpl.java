@@ -23,7 +23,7 @@ import java.util.List;
  * Created by lllx on 2017/8/18.
  */
 @Service
-public class ItemServiceImpl implements ItemService{
+public class ItemServiceImpl implements ItemService {
 
     @Autowired
     private TbItemMapper itemMapper;

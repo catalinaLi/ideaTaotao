@@ -17,7 +17,7 @@
         <module>taotao-manage-pojo</module>
         <module>taotao-manage-mapper</module>
         <module>taotao-manage-service</module>
-        <module>taotao-manage-web</module>
+        <module>taotao-manage-interface</module>
     </modules>
 
     <properties>
