@@ -1,6 +1,8 @@
 package top.catalinali.common.pojo;
 
-public class EUTreeNode {
+import java.io.Serializable;
+
+public class EUTreeNode implements Serializable {
 
 	private long id;
 	private String text;

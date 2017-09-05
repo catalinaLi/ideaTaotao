@@ -1,5 +1,7 @@
 package top.catalinali.common.pojo;
 
+import java.io.Serializable;
+
 /**
  * <pre>
  * Description:
@@ -9,7 +11,7 @@ package top.catalinali.common.pojo;
  * Created at:	2017/8/23
  * </pre>
  */
-public class PictureResult {
+public class PictureResult implements Serializable {
     private int error;
     private String url;
     private String message;

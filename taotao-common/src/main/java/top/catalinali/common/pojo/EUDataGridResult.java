@@ -1,8 +1,9 @@
 package top.catalinali.common.pojo;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class EUDataGridResult {
+public class EUDataGridResult implements Serializable {
 
 	private long total;
 	private List<?> rows;

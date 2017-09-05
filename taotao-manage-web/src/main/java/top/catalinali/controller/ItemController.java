@@ -2,10 +2,7 @@ package top.catalinali.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import top.catalinali.common.pojo.EUDataGridResult;
 import top.catalinali.common.pojo.TaotaoResult;
 import top.catalinali.pojo.TbItem;
@@ -32,5 +29,12 @@ public class ItemController {
     public TaotaoResult createItem(TbItem item, String desc, String itemParams) throws Exception{
         TaotaoResult result = itemService.createItem(item,desc,itemParams);
         return result;
+    }
+
+    @RequestMapping("/{itemId}")
+    @ResponseBody
+    public TbItem getItemById(@PathVariable Long itemId) {
+        TbItem tbItem = itemService.getItemById(itemId);
+        return tbItem;
     }
 }

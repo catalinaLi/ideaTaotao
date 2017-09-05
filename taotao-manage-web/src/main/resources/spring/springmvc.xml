@@ -22,14 +22,14 @@
 	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
 	
 	<!-- 定义文件上传解析器 -->
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<!-- 设定默认编码 -->
+	<!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		&lt;!&ndash; 设定默认编码 &ndash;&gt;
 		<property name="defaultEncoding" value="UTF-8"></property>
-		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+		&lt;!&ndash; 设定文件上传的最大值5MB，5*1024*1024 &ndash;&gt;
 		<property name="maxUploadSize" value="5242880"></property>
-	</bean>
+	</bean>-->
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.2.132:2181,192.168.2.133:2181,192.168.2.134:2181"/>
-	<dubbo:reference interface="top.catalinali.service.ItemService" id="itemService" />
+	<dubbo:registry address="zookeeper://192.168.71.121:2181?backup=192.168.71.122:2181,192.168.71.123:2181" />
+	<dubbo:reference check="false" interface="top.catalinali.service.ItemService" id="itemService" />
 </beans>

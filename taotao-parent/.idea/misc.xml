@@ -40,19 +40,33 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../taotao-manage-web" />
-    <file type="web" url="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-interface" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-service" />
-    <file type="web" url="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../taotao-common/pom.xml" />
-        <option value="$PROJECT_DIR$/../taotao-manage/pom.xml" />
         <option value="$PROJECT_DIR$/../taotao-manage-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../taotao-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/../taotao-common/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
