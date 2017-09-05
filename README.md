@@ -23,14 +23,14 @@
 ### Git指令
 
 ```
-git diff readme.txt 		    在git add之前使用此命令可以查看文件修改的内容 
+git diff readme.txt         在git add之前使用此命令可以查看文件修改的内容 
 git log                     显示从最近到最远的提交日志		 查看提交历史
 git reflog                  可以查看所有分支的所有操作记录   查看命令历史
-git log --pretty=oneline	  在一行之内显示提交日志 格式:版本号 message
-git reset --hard HEAD^ 		  回退到上一个版本(HEAD表示当前版本)
-git reset --hard commitId	  指定回到某个版本
-git checkout --fileName		  就是让这个文件回到最近一次git commit或git add时的状态。
-git reset HEAD fileName		  把暂存区的修改撤销掉，重新放回工作区
+git log --pretty=oneline    在一行之内显示提交日志 格式:版本号 message
+git reset --hard HEAD^      回退到上一个版本(HEAD表示当前版本)
+git reset --hard commitId   指定回到某个版本
+git checkout --fileName     就是让这个文件回到最近一次git commit或git add时的状态。
+git reset HEAD fileName     把暂存区的修改撤销掉，重新放回工作区
 - 分支操作
 git branch                  查看分支
 
