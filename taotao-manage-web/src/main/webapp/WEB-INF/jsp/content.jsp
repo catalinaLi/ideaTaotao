@@ -13,11 +13,11 @@
 		            <th data-options="field:'title',width:120">内容标题</th>
 		            <th data-options="field:'subTitle',width:100">内容子标题</th>
 		            <th data-options="field:'titleDesc',width:120">内容描述</th>
-		            <th data-options="field:'url',width:60,align:'center',formatter:TAOTAO.formatUrl">内容连接</th>
-		            <th data-options="field:'pic',width:50,align:'center',formatter:TAOTAO.formatUrl">图片</th>
-		            <th data-options="field:'pic2',width:50,align:'center',formatter:TAOTAO.formatUrl">图片2</th>
-		            <th data-options="field:'created',width:130,align:'center',formatter:TAOTAO.formatDateTime">创建日期</th>
-		            <th data-options="field:'updated',width:130,align:'center',formatter:TAOTAO.formatDateTime">更新日期</th>
+		            <th data-options="field:'url',width:60,align:'center',formatter:E3.formatUrl">内容连接</th>
+		            <th data-options="field:'pic',width:50,align:'center',formatter:E3.formatUrl">图片</th>
+		            <th data-options="field:'pic2',width:50,align:'center',formatter:E3.formatUrl">图片2</th>
+		            <th data-options="field:'created',width:130,align:'center',formatter:E3.formatDateTime">创建日期</th>
+		            <th data-options="field:'updated',width:130,align:'center',formatter:E3.formatDateTime">更新日期</th>
 		        </tr>
 		    </thead>
 		</table>
@@ -47,7 +47,7 @@ var contentListToolbar = [{
     		$.messager.alert('提示','新增内容必须选择一个内容分类!');
     		return ;
     	}
-    	TT.createWindow({
+    	E3.createWindow({
 			url : "/content-add"
 		}); 
     }
@@ -55,7 +55,7 @@ var contentListToolbar = [{
     text:'编辑',
     iconCls:'icon-edit',
     handler:function(){
-    	var ids = TT.getSelectionsIds("#contentList");
+    	var ids = E3.getSelectionsIds("#contentList");
     	if(ids.length == 0){
     		$.messager.alert('提示','必须选择一个内容才能编辑!');
     		return ;
@@ -64,7 +64,7 @@ var contentListToolbar = [{
     		$.messager.alert('提示','只能选择一个内容!');
     		return ;
     	}
-		TT.createWindow({
+		E3.createWindow({
 			url : "/content-edit",
 			onLoad : function(){
 				var data = $("#contentList").datagrid("getSelections")[0];
@@ -86,7 +86,7 @@ var contentListToolbar = [{
     text:'删除',
     iconCls:'icon-cancel',
     handler:function(){
-    	var ids = TT.getSelectionsIds("#contentList");
+    	var ids = E3.getSelectionsIds("#contentList");
     	if(ids.length == 0){
     		$.messager.alert('提示','未选中商品!');
     		return ;

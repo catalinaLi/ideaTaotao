@@ -54,8 +54,8 @@
 <script type="text/javascript">
 var contentEditEditor ;
 $(function(){
-	contentEditEditor = TT.createEditor("#contentEditForm [name=content]");
-	TT.initOnePicUpload();
+	contentEditEditor = E3.createEditor("#contentEditForm [name=content]");
+	E3.initOnePicUpload();
 });
 
 var contentEditPage = {
@@ -70,7 +70,7 @@ var contentEditPage = {
 				if(data.status == 200){
 					$.messager.alert('提示','新增内容成功!');
 					$("#contentList").datagrid("reload");
-					TT.closeCurrentWindow();
+					E3.closeCurrentWindow();
 				}
 			});
 		},
