@@ -25,6 +25,11 @@
             <artifactId>taotao-manage-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--上传组件-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
