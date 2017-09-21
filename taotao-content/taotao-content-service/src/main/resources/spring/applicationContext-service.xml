@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
 	<!-- 扫描包加载Service实现类 -->
-	<context:component-scan base-package="top.catalinali.service"/>
+	<context:component-scan base-package="top.catalinali.content.service"/>
 	<!-- 定义文件上传解析器 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<!-- 设定默认编码 -->
@@ -22,12 +22,10 @@
 
 	<!-- 使用dubbo发布服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->
-	<dubbo:application name="taotao-manager" />
+	<dubbo:application name="taotao-content-manager" />
 	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20880" />
 	<!-- 声明需要暴露的服务接口 -->
-	<dubbo:service interface="top.catalinali.service.ItemService" ref="itemServiceImpl" />
-	<dubbo:service interface="top.catalinali.service.ItemCatService" ref="itemCatServiceImpl" />
-	<dubbo:service interface="top.catalinali.service.PictureService" ref="pictureServiceImpl" />
+	<!--<dubbo:service interface="top.catalinali.service.ItemService" ref="itemServiceImpl" />-->
 </beans>

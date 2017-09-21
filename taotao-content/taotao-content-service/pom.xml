@@ -1,26 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <artifactId>taotao-parent</artifactId>
+        <artifactId>taotao-content</artifactId>
         <groupId>top.catalinali</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>taotao-manage-web</artifactId>
+    <artifactId>taotao-content-service</artifactId>
     <packaging>war</packaging>
-    <name>taotao-manage-web Maven Webapp</name>
+    <name>taotao-content-service Maven Webapp</name>
     <url>http://maven.apache.org</url>
-    <!-- 依赖管理 -->
     <dependencies>
         <dependency>
             <groupId>top.catalinali</groupId>
-            <artifactId>taotao-manage-interface</artifactId>
+            <artifactId>taotao-manage-mapper</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--上传组件-->
         <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
+            <groupId>top.catalinali</groupId>
+            <artifactId>taotao-content-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- Spring -->
         <dependency>
@@ -51,21 +50,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
-        <!-- JSP相关 -->
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
         <!-- dubbo相关 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -90,18 +74,7 @@
             <artifactId>zkclient</artifactId>
         </dependency>
     </dependencies>
-    <!-- 配置tomcat插件 -->
     <build>
-        <finalName>taotao-manage-web</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <configuration>
-                    <path>/</path>
-                    <port>7080</port>
-                </configuration>
-            </plugin>
-        </plugins>
+        <finalName>taotao-content-service</finalName>
     </build>
 </project>

@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 
-	<context:component-scan base-package="top.catalinali.controller" />
+	<context:component-scan base-package="top.catalinali.portal.controller" />
 	<mvc:annotation-driven />
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -18,20 +18,11 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	<!-- 资源映射 -->
-	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
-	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+	<mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
 	
-	<!-- 定义文件上传解析器 -->
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<!-- 设定默认编码 -->
-		<property name="defaultEncoding" value="UTF-8"></property>
-		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
-		<property name="maxUploadSize" value="5242880"></property>
-	</bean>
 	<!-- 引用dubbo服务 -->
-	<dubbo:application name="taotao-manager-web"/>
-	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
-	<dubbo:reference check="false" interface="top.catalinali.service.ItemService" id="itemService" />
-	<dubbo:reference check="false" interface="top.catalinali.service.ItemCatService" id="itemCatService" />
-	<dubbo:reference check="false" interface="top.catalinali.service.PictureService" id="pictureService" />
+	<dubbo:application name="taotao-portal-web"/>
+	<dubbo:registry address="zookeeper://192.168.71.121:2181?backup=192.168.71.122:2181,192.168.71.123:2181" />
+	<!--<dubbo:reference check="false" interface="top.catalinali.service.ItemService" id="itemService" />-->
 </beans>
