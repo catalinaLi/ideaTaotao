@@ -35,6 +35,6 @@
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* top.catalinali.service.*.*(..))" />
+			pointcut="execution(* top.catalinali.content.service.*.*(..))" />
 	</aop:config>
 </beans>

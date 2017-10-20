@@ -24,8 +24,8 @@
 
     <dependencies>
         <dependency>
-            <artifactId>taotao-parent</artifactId>
             <groupId>top.catalinali</groupId>
+            <artifactId>taotao-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

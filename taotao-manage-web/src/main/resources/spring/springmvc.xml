@@ -28,10 +28,12 @@
 		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
 		<property name="maxUploadSize" value="5242880"></property>
 	</bean>
+
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
 	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
 	<dubbo:reference check="false" interface="top.catalinali.service.ItemService" id="itemService" />
 	<dubbo:reference check="false" interface="top.catalinali.service.ItemCatService" id="itemCatService" />
 	<dubbo:reference check="false" interface="top.catalinali.service.PictureService" id="pictureService" />
+	<dubbo:reference check="false" interface="top.catalinali.content.service.ContentCategoryService" id="contentCategoryService" />
 </beans>

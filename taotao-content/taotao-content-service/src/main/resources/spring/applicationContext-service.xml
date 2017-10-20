@@ -11,21 +11,21 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
 	<!-- 扫描包加载Service实现类 -->
-	<context:component-scan base-package="top.catalinali.content.service"/>
+	<context:component-scan base-package="top.catalinali.content.service.*"/>
 	<!-- 定义文件上传解析器 -->
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<!-- 设定默认编码 -->
+	<!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		&lt;!&ndash; 设定默认编码 &ndash;&gt;
 		<property name="defaultEncoding" value="UTF-8"></property>
-		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->
+		&lt;!&ndash; 设定文件上传的最大值5MB，5*1024*1024 &ndash;&gt;
 		<property name="maxUploadSize" value="5242880"></property>
-	</bean>
+	</bean>-->
 
 	<!-- 使用dubbo发布服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->
-	<dubbo:application name="taotao-content-manager" />
+	<dubbo:application name="taotao-content" />
 	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
-	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<!-- 用dubbo协议在20881端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20881" />
 	<!-- 声明需要暴露的服务接口 -->
-	<!--<dubbo:service interface="top.catalinali.service.ItemService" ref="itemServiceImpl" />-->
+	<dubbo:service interface="top.catalinali.content.service.ContentCategoryService" ref="contentCategoryServiceImpl" />
 </beans>
