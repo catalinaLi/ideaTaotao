@@ -17,6 +17,9 @@
   Alt + Shift + Up/Down     上/下移一行
   Alt +	鼠标左键             上下拖动 多行编辑
   Alt + Shift + 鼠标左键     多行选择 自定义多行编辑
+  Ctrl + Alt + T            环绕提示
+  Ctrl + Shift + U          大小写切换
+  Ctrl + F3                 调转到所选中的词的下一个引用位置  
 ```
 
 ## Git学习笔记
