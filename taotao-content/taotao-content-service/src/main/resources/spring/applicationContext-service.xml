@@ -28,4 +28,5 @@
 	<dubbo:protocol name="dubbo" port="20881" />
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="top.catalinali.content.service.ContentCategoryService" ref="contentCategoryServiceImpl" />
+	<dubbo:service interface="top.catalinali.content.service.ContentService" ref="contentServiceImpl" />
 </beans>

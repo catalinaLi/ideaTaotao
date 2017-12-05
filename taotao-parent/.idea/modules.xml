@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage-web/taotao-manage-web.iml" filepath="$PROJECT_DIR$/../taotao-manage-web/taotao-manage-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotao-parent.iml" filepath="$PROJECT_DIR$/taotao-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-portal-web/taotao-portal-web.iml" filepath="$PROJECT_DIR$/../taotao-portal-web/taotao-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-search/taotao-search.iml" filepath="$PROJECT_DIR$/../taotao-search/taotao-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-search/taotao-search-interface/taotao-search-interface.iml" filepath="$PROJECT_DIR$/../taotao-search/taotao-search-interface/taotao-search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-search/taotao-search-service/taotao-search-service.iml" filepath="$PROJECT_DIR$/../taotao-search/taotao-search-service/taotao-search-service.iml" />
     </modules>
   </component>
 </project>

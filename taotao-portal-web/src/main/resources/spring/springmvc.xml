@@ -9,6 +9,8 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
+	<!--加载配置文件-->
+	<context:property-placeholder location="classpath:conf/resource.properties" />
 
 	<context:component-scan base-package="top.catalinali.portal.controller" />
 	<mvc:annotation-driven />
@@ -23,6 +25,7 @@
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-portal-web"/>
-	<dubbo:registry address="zookeeper://192.168.71.121:2181?backup=192.168.71.122:2181,192.168.71.123:2181" />
-	<!--<dubbo:reference check="false" interface="top.catalinali.service.ItemService" id="itemService" />-->
+	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
+	<dubbo:reference check="false" interface="top.catalinali.content.service.ContentService" id="contentService" />
+	<dubbo:reference check="false" interface="top.catalinali.content.service.ContentCategoryService" id="contentCategoryService" />
 </beans>

@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>top.catalinali</groupId>
-            <artifactId>taotao-manage-interface</artifactId>
+            <artifactId>taotao-content-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- Spring -->

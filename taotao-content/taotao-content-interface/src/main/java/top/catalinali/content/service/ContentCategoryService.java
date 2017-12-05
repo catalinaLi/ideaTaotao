@@ -1,6 +1,7 @@
 package top.catalinali.content.service;
 
 import top.catalinali.common.pojo.EUTreeNode;
+import top.catalinali.common.pojo.TaotaoResult;
 
 import java.util.List;
 
@@ -20,6 +21,8 @@ public interface ContentCategoryService {
      * @return
      */
     List<EUTreeNode> getContentCatList(long parentId);
+
+    TaotaoResult addContentCategory(long parentId, String name);
 }
 
 

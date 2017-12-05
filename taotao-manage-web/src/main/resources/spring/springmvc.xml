@@ -36,4 +36,5 @@
 	<dubbo:reference check="false" interface="top.catalinali.service.ItemCatService" id="itemCatService" />
 	<dubbo:reference check="false" interface="top.catalinali.service.PictureService" id="pictureService" />
 	<dubbo:reference check="false" interface="top.catalinali.content.service.ContentCategoryService" id="contentCategoryService" />
+	<dubbo:reference check="false" interface="top.catalinali.content.service.ContentService" id="contentService" />
 </beans>

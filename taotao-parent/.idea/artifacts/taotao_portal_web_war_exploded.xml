@@ -7,13 +7,12 @@
           <element id="module-output" name="taotao-portal-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="taotao-manage-interface-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="taotao-manage-interface" />
+          <element id="archive" name="taotao-content-interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="taotao-content-interface" />
           </element>
           <element id="archive" name="taotao-manage-pojo-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manage-pojo" />
           </element>
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.2.5.RELEASE" />
           <element id="archive" name="taotao-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-common" />
           </element>
@@ -29,6 +28,8 @@
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.6" />
           <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.2.2" />
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.1" />
+          <element id="library" level="project" name="Maven: redis.clients:jedis:2.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -37,6 +38,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.2.4.RELEASE" />
