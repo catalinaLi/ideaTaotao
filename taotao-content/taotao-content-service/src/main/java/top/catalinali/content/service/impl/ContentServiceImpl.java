@@ -33,7 +33,7 @@ public class ContentServiceImpl implements ContentService {
     @Autowired
     private JedisClient jedisClient;
 
-    @Value("#{CONTENT_LIST}")
+    @Value("${CONTENT_LIST}")
     private String CONTENT_LIST;
 
     @Override

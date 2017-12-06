@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.solr:solr-solrj:4.10.3">
+    <CLASSES>
+      <root url="jar://F:/taotaoAware/MavenRepository/org/apache/solr/solr-solrj/4.10.3/solr-solrj-4.10.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/taotaoAware/MavenRepository/org/apache/solr/solr-solrj/4.10.3/solr-solrj-4.10.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/taotaoAware/MavenRepository/org/apache/solr/solr-solrj/4.10.3/solr-solrj-4.10.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

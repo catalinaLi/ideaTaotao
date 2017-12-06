@@ -10,6 +10,7 @@
 
 	<import resource="applicationContext-dao.xml"/>
 	<import resource="applicationContext-service.xml"/>
+	<import resource="applicationContext-redis.xml"/>
 
 	<!-- 事务管理器 -->
 	<bean id="transactionManager"
