@@ -8,7 +8,7 @@
   F2                        跳转到下一个高亮错误 或 警告位置
   ctrl + Alt + v            自动填充变量
   ctrl + /                  这个是多行代码分行注释，每行一个注释符号
-  ctrl + shift + /          这个是多行代码注释在一个块里，只在开头和结尾有注释符号
+  ctrl + Shift + /          这个是多行代码注释在一个块里，只在开头和结尾有注释符号
   Ctrl + Shift + Z          取消撤销 （必备）
   Ctrl + Shift + N          查找类 
   Ctrl + Alt + L            查找文件
@@ -17,6 +17,9 @@
   Alt + Shift + Up/Down     上/下移一行
   Alt +	鼠标左键             上下拖动 多行编辑
   Alt + Shift + 鼠标左键     多行选择 自定义多行编辑
+  Ctrl + Alt + T            环绕提示
+  Ctrl + Shift + U          大小写切换
+  Ctrl + F3                 调转到所选中的词的下一个引用位置  
 ```
 
 ## Git学习笔记
