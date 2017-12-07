@@ -43,6 +43,7 @@
     <file type="web" url="file://$PROJECT_DIR$/../taotao-manage-web" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-service" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../taotao-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-search/taotao-search-service" />
   </component>
   <component name="MavenProjectsManager">
@@ -56,6 +57,7 @@
         <option value="$PROJECT_DIR$/../taotao-content/pom.xml" />
         <option value="$PROJECT_DIR$/../taotao-content/taotao-content-service/pom.xml" />
         <option value="$PROJECT_DIR$/../taotao-search/pom.xml" />
+        <option value="$PROJECT_DIR$/../taotao-search-web/pom.xml" />
       </list>
     </option>
   </component>

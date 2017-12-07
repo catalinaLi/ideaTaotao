@@ -1,5 +1,8 @@
 package top.catalinali.search.service;
 
+
+import top.catalinali.common.pojo.SearchResult;
+
 /**
  * <pre>
  * Description: 搜索服务层
@@ -10,5 +13,5 @@ package top.catalinali.search.service;
  * </pre>
  */
 public interface SearchService {
-
+    SearchResult search(String keyword, int page, int rows)  throws Exception;
 }

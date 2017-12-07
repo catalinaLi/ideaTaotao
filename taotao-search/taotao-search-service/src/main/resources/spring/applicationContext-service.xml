@@ -14,7 +14,7 @@
 	<import resource="applicationContext-solr.xml"/>
 
 	<!-- 扫描包加载Service实现类 -->
-	<context:component-scan base-package="top.catalinali.search.service.*"/>
+	<context:component-scan base-package="top.catalinali.search.*"/>
 
 	<!-- 使用dubbo发布服务 -->
 	<!-- 提供方应用信息，用于计算依赖关系 -->
@@ -24,4 +24,5 @@
 	<dubbo:protocol name="dubbo" port="20882" />
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="top.catalinali.search.service.SearchItemService" ref="searchItemServiceImpl" timeout="600000"/>
+	<dubbo:service interface="top.catalinali.search.service.SearchService" ref="searchServiceImpl" timeout="600000"/>
 </beans>
