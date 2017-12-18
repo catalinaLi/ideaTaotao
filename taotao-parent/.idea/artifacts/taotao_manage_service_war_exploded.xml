@@ -49,6 +49,7 @@
           <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
           <element id="library" level="project" name="Maven: io.netty:netty:3.7.0.Final" />
           <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.11.2" />
           <element id="archive" name="taotao-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-common" />
           </element>
