@@ -3,6 +3,8 @@ package top.catalinali.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 import top.catalinali.common.pojo.EUDataGridResult;
 import top.catalinali.common.pojo.TaotaoResult;
@@ -16,6 +18,8 @@ import top.catalinali.pojo.TbItemExample;
 import top.catalinali.pojo.TbItemParamItem;
 import top.catalinali.service.ItemService;
 
+import javax.annotation.Resource;
+import javax.jms.*;
 import java.util.Date;
 import java.util.List;
 
@@ -33,6 +37,12 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     private TbItemParamItemMapper itemParamItemMapper;
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
+    @Resource
+    private Destination topicDestination;
 
 
     @Override
@@ -70,7 +80,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public TaotaoResult createItem(TbItem item, String desc, String itemParam) throws Exception {
         //item补全，生成商品ID
-        Long itemId = IDUtils.genItemId();
+        final Long itemId = IDUtils.genItemId();
         item.setId(itemId);
         //商品状态1正常2下架3删除
         item.setStatus((byte) 1);
@@ -88,6 +98,16 @@ public class ItemServiceImpl implements ItemService {
         if(result.getStatus() != 200){
             throw new Exception();
         }
+
+        //发送商品添加消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId + "");
+                return textMessage;
+            }
+        });
 
         return TaotaoResult.ok();
     }
