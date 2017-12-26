@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fastdfs_client:fastdfs_client:1.25">
+    <CLASSES>
+      <root url="jar://F:/taotaoAware/MavenRepository/fastdfs_client/fastdfs_client/1.25/fastdfs_client-1.25.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/taotaoAware/MavenRepository/fastdfs_client/fastdfs_client/1.25/fastdfs_client-1.25-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/taotaoAware/MavenRepository/fastdfs_client/fastdfs_client/1.25/fastdfs_client-1.25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
