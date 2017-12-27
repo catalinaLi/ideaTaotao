@@ -13,8 +13,8 @@
         <constructor-arg index="0" value="http://192.168.72.122:8080/solr/collection1/"/>
     </bean>
     <!--集群版solrJ-->
-    <bean id="cloudSolrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
-        <constructor-arg index="0" value="192.168.72.121:2181,192.168.72.122:2181,192.168.72.124:2181"></constructor-arg>
-        <property name="defaultCollection" value="collection2"></property>
-    </bean>
+    <!--<bean id="cloudSolrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">-->
+        <!--<constructor-arg index="0" value="192.168.72.121:2181,192.168.72.122:2181,192.168.72.124:2181"></constructor-arg>-->
+        <!--<property name="defaultCollection" value="collection2"></property>-->
+    <!--</bean>-->
 </beans>

@@ -15,7 +15,7 @@
         WHERE
         a.`status` = 1
     </select>
-    <select id="getItemById" parameterType="long" resultType="cn.e3mall.common.pojo.SearchItem">
+    <select id="getItemById" parameterType="long" resultType="top.catalinali.common.pojo.SearchItem">
         SELECT
         a.id,
         a.title,

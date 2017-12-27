@@ -10,8 +10,9 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
-	<import resource="applicationContext-dao.xml"/>
-	<import resource="applicationContext-solr.xml"/>
+	<!--<import resource="applicationContext-dao.xml"/>-->
+	<!--<import resource="applicationContext-solr.xml"/>-->
+	<!--<import resource="applicationContext-activemq.xml"/>-->
 
 	<!-- 扫描包加载Service实现类 -->
 	<context:component-scan base-package="top.catalinali.search.*"/>

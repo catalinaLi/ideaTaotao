@@ -39,7 +39,7 @@ public class searchTest extends TestCase {
         SolrServer solrServer = new HttpSolrServer("http://192.168.72.122:8080/solr/collection1");
         //删除文档
         //solrServer.deleteById("doc03");
-        solrServer.deleteByQuery("item_title:测试商品03");
+        solrServer.deleteByQuery("id:151435958686129");
         //提交
         solrServer.commit();
     }

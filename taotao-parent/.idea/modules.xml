@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../taotao-content/taotao-content.iml" filepath="$PROJECT_DIR$/../taotao-content/taotao-content.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-content/taotao-content-interface/taotao-content-interface.iml" filepath="$PROJECT_DIR$/../taotao-content/taotao-content-interface/taotao-content-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-content/taotao-content-service/taotao-content-service.iml" filepath="$PROJECT_DIR$/../taotao-content/taotao-content-service/taotao-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-item-web/taotao-item-web.iml" filepath="$PROJECT_DIR$/../taotao-item-web/taotao-item-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage/taotao-manage.iml" filepath="$PROJECT_DIR$/../taotao-manage/taotao-manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-interface/taotao-manage-interface.iml" filepath="$PROJECT_DIR$/../taotao-manage/taotao-manage-interface/taotao-manage-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-mapper/taotao-manage-mapper.iml" filepath="$PROJECT_DIR$/../taotao-manage/taotao-manage-mapper/taotao-manage-mapper.iml" />

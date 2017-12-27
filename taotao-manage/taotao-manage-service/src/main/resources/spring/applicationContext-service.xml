@@ -29,5 +29,5 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="top.catalinali.service.ItemService" ref="itemServiceImpl" />
 	<dubbo:service interface="top.catalinali.service.ItemCatService" ref="itemCatServiceImpl" />
-	<dubbo:service interface="top.catalinali.service.PictureService" ref="pictureServiceImpl" />
+	<!--<dubbo:service interface="top.catalinali.service.PictureService" ref="pictureServiceImpl" />-->
 </beans>
