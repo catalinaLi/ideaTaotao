@@ -19,6 +19,9 @@
         <module name="taotao-search-interface" />
         <module name="taotao-search-service" />
         <module name="taotao-search-web" />
+        <module name="taotao-sso-interface" />
+        <module name="taotao-sso-service" />
+        <module name="taotao-sso-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +42,10 @@
       <module name="taotao-search-interface" target="1.7" />
       <module name="taotao-search-service" target="1.7" />
       <module name="taotao-search-web" target="1.7" />
+      <module name="taotao-sso" target="1.7" />
+      <module name="taotao-sso-interface" target="1.7" />
+      <module name="taotao-sso-service" target="1.7" />
+      <module name="taotao-sso-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

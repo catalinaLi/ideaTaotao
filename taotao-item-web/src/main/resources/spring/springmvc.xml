@@ -19,9 +19,6 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-	<!-- 资源映射 -->
-	<mvc:resources location="/css/" mapping="/css/**"/>
-	<mvc:resources location="/js/" mapping="/js/**"/>
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-item-web"/>

@@ -18,6 +18,10 @@
     <file url="file://$PROJECT_DIR$/../taotao-search-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../taotao-search/taotao-search-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../taotao-search/taotao-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../taotao-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../taotao-sso-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../taotao-sso/taotao-sso-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../taotao-sso/taotao-sso-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
