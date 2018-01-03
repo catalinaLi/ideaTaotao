@@ -23,7 +23,7 @@
         <constructor-arg value="itemAddTopic" />
     </bean>
     <!-- 监听商品添加消息，同步索引库 -->
-    <bean id="htmlGenListener" class="cn.e3mall.item.listener.HtmlGenListener"/>
+    <bean id="htmlGenListener" class="top.catalinali.item.listener.HtmlGenListener"/>
     <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="connectionFactory" />
         <property name="destination" ref="topicDestination" />

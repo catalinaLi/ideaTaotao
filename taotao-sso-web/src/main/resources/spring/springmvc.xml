@@ -29,4 +29,5 @@
 	<dubbo:registry address="zookeeper://192.168.72.121:2181?backup=192.168.72.122:2181,192.168.72.124:2181" />
 	<dubbo:reference check="false" interface="top.catalinali.sso.service.RegisterService" id="registerService" />
 	<dubbo:reference check="false" interface="top.catalinali.sso.service.LoginService" id="loginService" />
+	<dubbo:reference check="false" interface="top.catalinali.sso.service.TokenService" id="tokenService" />
 </beans>

@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * <pre>
- * Description:
+ * Description: 用户登录处理
  * Copyright:	Copyright (c)2017
  * Author:		lllx
  * Version:		1.0
@@ -38,8 +38,7 @@ public class LoginController {
 
     @RequestMapping(value="/user/login", method= RequestMethod.POST)
     @ResponseBody
-    public TaotaoResult login(String username, String password,
-                              HttpServletRequest request, HttpServletResponse response) {
+    public TaotaoResult login(String username, String password,HttpServletRequest request, HttpServletResponse response) {
         TaotaoResult taotaoResult = loginService.userLogin(username, password);
         //判断是否登录成功
         if(taotaoResult.getStatus() == 200) {
