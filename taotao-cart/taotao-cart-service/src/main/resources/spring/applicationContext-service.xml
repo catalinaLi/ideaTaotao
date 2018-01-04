@@ -24,5 +24,5 @@
 	<!-- 用dubbo协议在20881端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20884" />
 	<!-- 声明需要暴露的服务接口 -->
-	<!--<dubbo:service interface="top.catalinali.sso.service.RegisterService" ref="registerServiceImpl" timeout="600000"/>-->
+	<dubbo:service interface="top.catalinali.cart.service.CartService" ref="cartServiceImpl" timeout="600000"/>
 </beans>
