@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="taotao-cart-interface" />
+        <module name="taotao-cart-service" />
+        <module name="taotao-cart-web" />
         <module name="taotao-common" />
         <module name="taotao-content-interface" />
         <module name="taotao-content-service" />
@@ -25,6 +28,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="taotao-cart" target="1.7" />
+      <module name="taotao-cart-interface" target="1.7" />
+      <module name="taotao-cart-service" target="1.7" />
+      <module name="taotao-cart-web" target="1.7" />
       <module name="taotao-common" target="1.7" />
       <module name="taotao-content" target="1.7" />
       <module name="taotao-content-interface" target="1.7" />

@@ -39,6 +39,8 @@
     </properties>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../taotao-cart-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../taotao-cart/taotao-cart-service" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-content/taotao-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/../taotao-manage-web" />
@@ -64,6 +66,8 @@
         <option value="$PROJECT_DIR$/../taotao-item-web/pom.xml" />
         <option value="$PROJECT_DIR$/../taotao-sso/pom.xml" />
         <option value="$PROJECT_DIR$/../taotao-sso-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../taotao-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/../taotao-cart-web/pom.xml" />
       </list>
     </option>
   </component>

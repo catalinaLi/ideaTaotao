@@ -31,11 +31,6 @@ public class LoginController {
     @Value("${TOKEN_KEY}")
     private String TOKEN_KEY;
 
-    @RequestMapping("/page/login")
-    public String showLogin() {
-        return "login";
-    }
-
     @RequestMapping(value="/user/login", method= RequestMethod.POST)
     @ResponseBody
     public TaotaoResult login(String username, String password,HttpServletRequest request, HttpServletResponse response) {
@@ -48,5 +43,10 @@ public class LoginController {
         }
         //返回结果
         return taotaoResult;
+    }
+
+    @RequestMapping("/page/login")
+    public String showLogin() {
+        return "login";
     }
 }

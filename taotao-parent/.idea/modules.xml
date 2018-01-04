@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../taotao-cart/taotao-cart.iml" filepath="$PROJECT_DIR$/../taotao-cart/taotao-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-cart/taotao-cart-interface/taotao-cart-interface.iml" filepath="$PROJECT_DIR$/../taotao-cart/taotao-cart-interface/taotao-cart-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-cart/taotao-cart-service/taotao-cart-service.iml" filepath="$PROJECT_DIR$/../taotao-cart/taotao-cart-service/taotao-cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-cart-web/taotao-cart-web.iml" filepath="$PROJECT_DIR$/../taotao-cart-web/taotao-cart-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-common/taotao-common.iml" filepath="$PROJECT_DIR$/../taotao-common/taotao-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-content/taotao-content.iml" filepath="$PROJECT_DIR$/../taotao-content/taotao-content.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-content/taotao-content-interface/taotao-content-interface.iml" filepath="$PROJECT_DIR$/../taotao-content/taotao-content-interface/taotao-content-interface.iml" />
