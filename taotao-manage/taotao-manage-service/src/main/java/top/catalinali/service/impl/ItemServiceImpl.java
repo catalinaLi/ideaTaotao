@@ -96,6 +96,7 @@ public class ItemServiceImpl implements ItemService {
     public EUDataGridResult getItemList(Integer page, Integer rows) {
         //查询商品列表
         TbItemExample example = new TbItemExample();
+
         //分页处理
         PageHelper.startPage(page, rows);
         List<TbItem> list = itemMapper.selectByExample(example);

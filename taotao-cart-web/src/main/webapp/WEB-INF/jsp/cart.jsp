@@ -66,7 +66,7 @@
 						<div class="pItem pGoods">
 							<div class="cart_pimg">
 								<a target="_blank" title="${cart.title }" href="http://localhost:8086/item/${cart.id }.html">
-								<img src="${cart.images }" style="width: 60px;height: 60px;"/>
+								<img src="${cart.image }" style="width: 60px;height: 60px;"/>
 								</a>
 							</div>
 							<div class="cart_pname">
@@ -117,8 +117,8 @@
         </div>
       </div>
       <div class="cartJsuan">
-         <input onclick="javascript:document.location.href='http://localhost:8082'" class="goshop" value="继续购物" type="button">
-         <input onclick="javascript:document.location.href='http://localhost:8091/order/order-cart.html'" class="jiesuan youxuan" value="去结算" type="button">
+         <input onclick="javascript:document.location.href='http://localhost:7082'" class="goshop" value="继续购物" type="button">
+         <input onclick="javascript:document.location.href='http://localhost:7092/order/order-cart.html'" class="jiesuan youxuan" value="去结算" type="button">
       </div>
     </div>
 </div>

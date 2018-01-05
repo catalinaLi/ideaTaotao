@@ -25,7 +25,7 @@
 			<h3 class="cartMy">您的商品已经成功加入购物车！</h3>
 			<div class="cartJsuan">
 				<input type="button" class="goshop" onclick="window.history.back();return false;" value="返回"/>
-				<input type="button" class="jiesuan youxuan" onclick="location.href='http://localhost:8089/cart/cart.html'" value="去购物车结算"/>
+				<input type="button" class="jiesuan youxuan" onclick="location.href='http://localhost:7090/cart/cart.html'" value="去购物车结算"/>
 			</div>
 		</div>
 

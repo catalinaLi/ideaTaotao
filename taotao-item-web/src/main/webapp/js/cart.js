@@ -273,7 +273,7 @@ function cartAdd(product_id,cart_type,opencity_id, flag,bs, obj, cfrom){
     //取购物车商品数量
 	var num = $("#number_" + product_id).val();
 	//拼装url参数，做跳转
-	location.href="http://localhost:8089/cart/add/"+product_id+".html?num=" + num;
+	location.href="http://localhost:7090/cart/add/"+product_id+".html?num=" + num;
 }
 
 //首页添加购物车

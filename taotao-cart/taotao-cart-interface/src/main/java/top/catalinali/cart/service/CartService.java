@@ -20,4 +20,5 @@ public interface CartService {
     List<TbItem> getCartList(long userId);
     TaotaoResult updateCartNum(long userId, long itemId, int num);
     TaotaoResult deleteCartItem(long userId, long itemId);
+    TaotaoResult clearCartItem(long userId);
 }

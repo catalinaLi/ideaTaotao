@@ -17,6 +17,10 @@
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-pojo/taotao-manage-pojo.iml" filepath="$PROJECT_DIR$/../taotao-manage/taotao-manage-pojo/taotao-manage-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage/taotao-manage-service/taotao-manage-service.iml" filepath="$PROJECT_DIR$/../taotao-manage/taotao-manage-service/taotao-manage-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-manage-web/taotao-manage-web.iml" filepath="$PROJECT_DIR$/../taotao-manage-web/taotao-manage-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-order/taotao-order.iml" filepath="$PROJECT_DIR$/../taotao-order/taotao-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-order/taotao-order-interface/taotao-order-interface.iml" filepath="$PROJECT_DIR$/../taotao-order/taotao-order-interface/taotao-order-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-order/taotao-order-service/taotao-order-service.iml" filepath="$PROJECT_DIR$/../taotao-order/taotao-order-service/taotao-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../taotao-order-web/taotao-order-web.iml" filepath="$PROJECT_DIR$/../taotao-order-web/taotao-order-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotao-parent.iml" filepath="$PROJECT_DIR$/taotao-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-portal-web/taotao-portal-web.iml" filepath="$PROJECT_DIR$/../taotao-portal-web/taotao-portal-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../taotao-search/taotao-search.iml" filepath="$PROJECT_DIR$/../taotao-search/taotao-search.iml" />

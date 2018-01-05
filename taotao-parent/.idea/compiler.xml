@@ -18,6 +18,9 @@
         <module name="taotao-manage-pojo" />
         <module name="taotao-manage-service" />
         <module name="taotao-manage-web" />
+        <module name="taotao-order-interface" />
+        <module name="taotao-order-service" />
+        <module name="taotao-order-web" />
         <module name="taotao-portal-web" />
         <module name="taotao-search-interface" />
         <module name="taotao-search-service" />
@@ -43,6 +46,10 @@
       <module name="taotao-manage-pojo" target="1.7" />
       <module name="taotao-manage-service" target="1.7" />
       <module name="taotao-manage-web" target="1.7" />
+      <module name="taotao-order" target="1.7" />
+      <module name="taotao-order-interface" target="1.7" />
+      <module name="taotao-order-service" target="1.7" />
+      <module name="taotao-order-web" target="1.7" />
       <module name="taotao-parent" target="1.7" />
       <module name="taotao-portal-web" target="1.7" />
       <module name="taotao-search" target="1.7" />

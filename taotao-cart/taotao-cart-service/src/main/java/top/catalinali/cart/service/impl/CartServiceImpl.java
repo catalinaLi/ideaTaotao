@@ -1,4 +1,4 @@
-package top.catalinali.cart.impl;
+package top.catalinali.cart.service.impl;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,6 +107,13 @@ public class CartServiceImpl implements CartService{
     public TaotaoResult deleteCartItem(long userId, long itemId) {
         // 删除购物车商品
         jedisClient.hdel(REDIS_CART_PRE + ":" + userId, itemId + "");
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult clearCartItem(long userId) {
+        //删除购物车信息
+        jedisClient.del(REDIS_CART_PRE + ":" + userId);
         return TaotaoResult.ok();
     }
 
