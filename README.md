@@ -1,20 +1,16 @@
-# 在此处输入标题
-
-标签（空格分隔）： 未分类
-
----
-
-# 关于淘淘商城 
+## 关于淘淘商城 
 淘淘商城商城应该是一个网上臭名昭著的电商练习项目了，本着学习的目的把他写了一遍。说实话，还是受益良多的。
 废话不多说了，我们来看一下他的架构
 ![taotao_arch](http://ou3np1yz4.bkt.clouddn.com/taotao_arch.png)
 项目采用SOA的架构，使用dubbo作为服务中间件。把工程拆分成服务层、表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。表现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
+
 **前台**
 ![taotao_portal](http://ou3np1yz4.bkt.clouddn.com/taotao_portal.png)
+
 **后台**
 ![taotao_admin](http://ou3np1yz4.bkt.clouddn.com/taotao_admin.png)
 前端页面不是这次练习的重点。
-# 服务介绍
+## 服务介绍
 - taotao-manage 
     后台服务层，提供后台基础服务。
 - taotao-manage-web
@@ -41,17 +37,17 @@
     订单服务层，提供了订单基础服务。
 - taotao-order-web
     订单表现层，调用了order、cart、sso的服务
-# 使用的中间件
-## Nginx
+## 使用的中间件
+### Nginx
 Nginx是一款高性能的http服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器。
 具体使用可以看[Nginx初探究：安装与简单使用](http://catalinali.top/2017/helloNginx/)
-## FastDFS分布式文件系统
+### FastDFS分布式文件系统
 FastDFS是一个开源的轻量级分布式文件系统，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合中小文件（建议范围：4KB < file_size <500MB），对以文件为载体的在线服务，如相册网站、视频网站等。
-## Redis
+### Redis
 Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。
 具体使用可以看[走进Redis：Redis的安装、使用以及集群的搭建](http://catalinali.top/2017/buildredis/)
-## 搜索应用服务器Solr
+### 搜索应用服务器Solr
 Solr是一个独立的企业级搜索应用服务器，它对外提供类似于Web-service的API接口。用户可以通过http请求，向搜索引擎服务器提交一定格式的XML文件，生成索引；也可以通过Http Get操作提出查找请求，并得到XML格式的返回结果。
-## 消息服务Activemq
+### 消息服务Activemq
 ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。ActiveMQ 是一个完全支持JMS1.1和J2EE 1.4规范的 JMS Provider实现，尽管JMS规范出台已经是很久的事情了，但是JMS在当今的J2EE应用中间仍然扮演着特殊的地位。
 具体使用可以看[ActiveMQ从入门到实践](http://catalinali.top/2017/useMQ/)
