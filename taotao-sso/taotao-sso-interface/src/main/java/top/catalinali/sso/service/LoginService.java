@@ -16,4 +16,7 @@ public interface LoginService {
 	 */
     //返回值：E3Result，其中包含token信息
     TaotaoResult userLogin(String username, String password);
+
+    //登出 删除redis
+    TaotaoResult logOut(String token);
 }

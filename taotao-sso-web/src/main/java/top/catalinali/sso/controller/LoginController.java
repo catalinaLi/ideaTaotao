@@ -1,8 +1,12 @@
 package top.catalinali.sso.controller;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -45,8 +49,27 @@ public class LoginController {
         return taotaoResult;
     }
 
+    @RequestMapping(value="/user/logout/{token}")
+    @ResponseBody
+    public Object logout(HttpServletRequest request, HttpServletResponse response, @PathVariable String token, String callback) {
+        //删除cookie
+        CookieUtils.deleteCookie(request,response,TOKEN_KEY);
+        //删除redis
+        TaotaoResult taotaoResult = loginService.logOut(token);
+        //响应结果之前，判断是否为jsonp请求
+        if (StringUtils.isNotBlank(callback)) {
+            //把结果封装成一个js语句响应
+            MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(taotaoResult);
+            mappingJacksonValue.setJsonpFunction(callback);
+            return mappingJacksonValue;
+        }
+        return TaotaoResult.build(400,"当前不是登录状态",null);
+    }
+
     @RequestMapping("/page/login")
-    public String showLogin() {
+    public String showLogin(String redirect, Model model) {
+        model.addAttribute("redirect", redirect);
         return "login";
     }
+
 }

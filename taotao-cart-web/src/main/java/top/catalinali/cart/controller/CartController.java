@@ -170,8 +170,7 @@ public class CartController {
      * 删除购物车商品
      */
     @RequestMapping("/cart/delete/{itemId}")
-    public String deleteCartItem(@PathVariable Long itemId, HttpServletRequest request,
-                                 HttpServletResponse response) {
+    public String deleteCartItem(@PathVariable Long itemId, HttpServletRequest request,HttpServletResponse response) {
         //判断用户是否为登录状态
         TbUser user = (TbUser) request.getAttribute("user");
         if (user != null) {
