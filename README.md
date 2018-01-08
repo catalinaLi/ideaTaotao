@@ -1,122 +1,57 @@
+# 在此处输入标题
 
-## 目标
-在IDEA上使用Git+Github完成淘淘商城
-## IDEA学习笔记
+标签（空格分隔）： 未分类
 
-```
-  ctrl + Alt + B            快速进入实现类
-  F2                        跳转到下一个高亮错误 或 警告位置
-  ctrl + Alt + v            自动填充变量
-  ctrl + /                  这个是多行代码分行注释，每行一个注释符号
-  ctrl + Shift + /          这个是多行代码注释在一个块里，只在开头和结尾有注释符号
-  Ctrl + Shift + Z          取消撤销 （必备）
-  Ctrl + Shift + N          查找类 
-  Ctrl + Alt + L            查找文件
-  Ctrl + Alt + Enter        将光标移到当前行的上一行
-  Shift + Enter             将光标移到当前行的下一行
-  Alt + Shift + Up/Down     上/下移一行
-  Alt +	鼠标左键             上下拖动 多行编辑
-  Alt + Shift + 鼠标左键     多行选择 自定义多行编辑
-  Ctrl + Alt + T            环绕提示
-  Ctrl + Shift + U          大小写切换
-  Ctrl + F3                 调转到所选中的词的下一个引用位置  
-```
+---
 
-## Git学习笔记
-### Git指令
-
-```
-git diff readme.txt         在git add之前使用此命令可以查看文件修改的内容 
-git log                     显示从最近到最远的提交日志		 查看提交历史
-git reflog                  可以查看所有分支的所有操作记录   查看命令历史
-git log --pretty=oneline    在一行之内显示提交日志 格式:版本号 message
-git reset --hard HEAD^      回退到上一个版本(HEAD表示当前版本)
-git reset --hard commitId   指定回到某个版本
-git checkout --fileName     就是让这个文件回到最近一次git commit或git add时的状态。
-git reset HEAD fileName     把暂存区的修改撤销掉，重新放回工作区
-- 分支操作
-git branch                  查看分支
-
-git branch <name>           创建分支
-
-git checkout <name>         切换分支
-
-git checkout -b <name>      创建+切换分支
-
-git merge <name>            合并某分支到当前分支
-
-git branch -d <name>        删除分支
-```
-
-### Git名词解释
-Git工作区（Working Directory）:就是你在电脑里能看到的目录。
-
-版本库（Repository）:工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
-Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
-
-git删除后：
-有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit。
-另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
-```
- git checkout -- test.txt
-```
-git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
-
-## Git远程操作
-
-### Git中从远程的分支获取最新的版本到本地有这样2个命令：
- 1. git fetch：相当于是从远程获取最新版本到本地，不会自动merge
-
-```
-git fetch origin master
-git log -p master..origin/master
-git merge origin/master
-```
-
-以上命令的含义：
-首先从远程的origin的master主分支下载最新的版本到origin/master分支上
-然后比较本地的master分支和origin/master分支的差别
-最后进行合并
-上述过程其实可以用以下更清晰的方式来进行：
-
-```
-git fetch origin master:tmp
-git diff tmp 
-git merge tmp
-```
- 
-从远程获取最新的版本到本地的temp分支上之后再进行比较合并
- 2. git pull：相当于是从远程获取最新版本并merge到本地
-
-``` 
-git pull origin master
-```
-
-上述命令其实相当于`git fetch`和`git merge`
-在实际使用中，`git fetch`更安全一些,因为在merge前，我们可以查看更新情况，然后再决定是否合并。
-
-### Git关联远程仓库的操作
-关联一个远程仓库
-
-```
-git remote add origin git@github.com:YotrolZ/helloTest.git
-```
-
-删除关联远程仓库
-
-```
-git remote remove origin
-```
-
-展示所有关联的远程仓库
-
-```
-git remote -v
-```
-
-### 将本地内容推送到Github
-要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
-
-关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
-
-此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改；
+# 关于淘淘商城 
+淘淘商城商城应该是一个网上臭名昭著的电商练习项目了，本着学习的目的把他写了一遍。说实话，还是受益良多的。
+废话不多说了，我们来看一下他的架构
+![taotao_arch](http://ou3np1yz4.bkt.clouddn.com/taotao_arch.png)
+项目采用SOA的架构，使用dubbo作为服务中间件。把工程拆分成服务层、表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。表现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
+**前台**
+![taotao_portal](http://ou3np1yz4.bkt.clouddn.com/taotao_portal.png)
+**后台**
+![taotao_admin](http://ou3np1yz4.bkt.clouddn.com/taotao_admin.png)
+前端页面不是这次练习的重点。
+# 服务介绍
+- taotao-manage 
+    后台服务层，提供后台基础服务。
+- taotao-manage-web
+    后台表现层，调用了manage、content、search的服务。
+- taotao-portal-web
+    前台表现层，调用了content的服务。
+- taotao-content
+    CMS服务层，提供内容管理。
+- taotao-search
+    搜索服务层，提供搜索基础服务。
+- taotao-search-web
+    搜索表现层，调用了search的服务。
+- taotao-item-web
+    商品详情表现层，调用了manage的服务。
+- taotao-sso
+    单点登录服务层，提供sso基础服务。
+- taotao-sso-web
+    单点登录表现层，调用了sso的服务。
+- taotao-cart
+    购物车服务层，提供了购物车的基础服务。
+- taotao-cart-web
+    购物车表现层，调用了cart、manage、sso的服务。
+- taotao-order
+    订单服务层，提供了订单基础服务。
+- taotao-order-web
+    订单表现层，调用了order、cart、sso的服务
+# 使用的中间件
+## Nginx
+Nginx是一款高性能的http服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器。
+具体使用可以看[Nginx初探究：安装与简单使用](http://catalinali.top/2017/helloNginx/)
+## FastDFS分布式文件系统
+FastDFS是一个开源的轻量级分布式文件系统，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合中小文件（建议范围：4KB < file_size <500MB），对以文件为载体的在线服务，如相册网站、视频网站等。
+## Redis
+Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。
+具体使用可以看[走进Redis：Redis的安装、使用以及集群的搭建](http://catalinali.top/2017/buildredis/)
+## 搜索应用服务器Solr
+Solr是一个独立的企业级搜索应用服务器，它对外提供类似于Web-service的API接口。用户可以通过http请求，向搜索引擎服务器提交一定格式的XML文件，生成索引；也可以通过Http Get操作提出查找请求，并得到XML格式的返回结果。
+## 消息服务Activemq
+ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。ActiveMQ 是一个完全支持JMS1.1和J2EE 1.4规范的 JMS Provider实现，尽管JMS规范出台已经是很久的事情了，但是JMS在当今的J2EE应用中间仍然扮演着特殊的地位。
+具体使用可以看[ActiveMQ从入门到实践](http://catalinali.top/2017/useMQ/)
