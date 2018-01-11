@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>taotao-search-service</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>taotao-search-service</name>
     <url>http://maven.apache.org</url>
@@ -104,6 +104,17 @@
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-all</artifactId>
+        </dependency>
+        <!--springboot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->

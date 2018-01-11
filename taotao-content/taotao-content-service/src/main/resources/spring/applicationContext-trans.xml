@@ -8,9 +8,9 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-	<import resource="applicationContext-dao.xml"/>
-	<import resource="applicationContext-service.xml"/>
-	<import resource="applicationContext-redis.xml"/>
+	<!--<import resource="applicationContext-dao.xml"/>-->
+	<!--<import resource="applicationContext-service.xml"/>-->
+	<!--<import resource="applicationContext-redis.xml"/>-->
 
 	<!-- 事务管理器 -->
 	<bean id="transactionManager"
