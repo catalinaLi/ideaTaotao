@@ -49,6 +49,7 @@ SSO英文全称Single Sign On，单点登录。SSO是在多个应用系统中，
 解决方案：
 
 1、配置tomcat集群。配置tomcatSession复制。节点数不要超过5个。
+
 2、可以使用Session服务器，保存Session信息，使每个节点是无状态。需要模拟Session。
 
 淘淘商城采用了第二种方案，每次登录的时候后台生成一个随机的Token来模拟Session中的JSESSIONID。将这个Token在后台保存在Redis中，前台保存在Cookie中，这样每次登录的时候都进入SSO模块来处理登录的逻辑。
