@@ -22,9 +22,9 @@
   Ctrl + F3                 调转到所选中的词的下一个引用位置
   Ctrl+Shift+Alt+J       		批量修改变量快捷键
   Crtl+Shift+Enter          自动补全
-  Ctrl+Shift+N 			      	按文件名搜索文件
-  Ctrl+H 					          查看类的继承关系
-  Alt+F7 				          	查找类或方法在哪被使用
+  Ctrl+Shift+N              按文件名搜索文件
+  Ctrl+H                    查看类的继承关系
+  Alt+F7                    查找类或方法在哪被使用
 ```
 
 ## 目标
