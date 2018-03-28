@@ -19,8 +19,26 @@
   Alt + Shift + 鼠标左键     多行选择 自定义多行编辑
   Ctrl + Alt + T            环绕提示
   Ctrl + Shift + U          大小写切换
-  Ctrl + F3                 调转到所选中的词的下一个引用位置  
+  Ctrl + F3                 调转到所选中的词的下一个引用位置
+  Ctrl+Shift+Alt+J       		批量修改变量快捷键
+  Crtl+Shift+Enter          自动补全
+  Ctrl+Shift+N 			      	按文件名搜索文件
+  Ctrl+H 					          查看类的继承关系
+  Alt+F7 				          	查找类或方法在哪被使用
 ```
+
+## 目标
+在学习vue的同时学习sublime的使用
+## sublime学习笔记
+
+```
+  Ctrl + Enter            	将光标移到当前行的下一行
+  Ctrl+Shift+Enter 	    		在上一行插入新行
+  Ctrl+Shift+D  		      	复制光标所在整行，插入到下一行
+  Ctrl+Shift+↓			      	将光标所在行插入到下一行之后
+  Ctrl+Shift+K			      	删除当前行
+```
+
 
 ## Git学习笔记
 ### Git指令
