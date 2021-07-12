@@ -4,14 +4,14 @@
 ## 关于淘淘商城 
 淘淘商城商城应该是一个网上臭名昭著的电商练习项目了，本着学习的目的把他写了一遍。说实话，还是受益良多的。
 废话不多说了，我们来看一下他的架构
-![taotao_arch](https://ws3.sinaimg.cn/large/005BYqpggy1fz9d9kkys3j30yr0kmwfz.jpg)
+![taotao_arch.png](https://i.loli.net/2021/07/12/z7BJmRNWb9fxSKO.png)
 项目采用SOA的架构，使用dubbo作为服务中间件。把工程拆分成服务层、表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。表现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
 
 **前台**
-![taotao_portal](https://ws3.sinaimg.cn/large/005BYqpgly1fz9d9yc6ntj31gm0qe46l.jpg)
+![taotao_portal.png](https://i.loli.net/2021/07/12/cBepjAqdiK5YGoD.png)
 
 **后台**
-![taotao_admin](https://ws3.sinaimg.cn/large/005BYqpgly1fz9d9926cbj31gv0q2gnp.jpg)
+![taotao_admin.png](https://i.loli.net/2021/07/12/ULs6l2aWADF3fMg.png)
 前端页面不是这次练习的重点。
 ## 服务介绍
 - taotao-manage 
