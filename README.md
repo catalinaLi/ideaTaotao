@@ -68,14 +68,14 @@ SSO英文全称Single Sign On，单点登录。SSO是在多个应用系统中，
 ## 使用的中间件
 ### Nginx
 Nginx是一款高性能的http服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器。
-具体使用可以看[Nginx初探究：安装与简单使用](http://catalinali.top/2017/helloNginx/)
+具体使用可以看[Nginx初探究：安装与简单使用](https://blog.csdn.net/a3212/article/details/78405451)
 ### FastDFS分布式文件系统
 FastDFS是一个开源的轻量级分布式文件系统，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合中小文件（建议范围：4KB < file_size <500MB），对以文件为载体的在线服务，如相册网站、视频网站等。
 ### Redis
 Redis是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。
-具体使用可以看[走进Redis：Redis的安装、使用以及集群的搭建](http://catalinali.top/2017/buildredis/)
+具体使用可以看[走进Redis：Redis的安装、使用以及集群的搭建](https://blog.csdn.net/a3212/article/details/78460198)
 ### 搜索应用服务器Solr
 Solr是一个独立的企业级搜索应用服务器，它对外提供类似于Web-service的API接口。用户可以通过http请求，向搜索引擎服务器提交一定格式的XML文件，生成索引；也可以通过Http Get操作提出查找请求，并得到XML格式的返回结果。
 ### 消息服务Activemq
 ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。ActiveMQ 是一个完全支持JMS1.1和J2EE 1.4规范的 JMS Provider实现，尽管JMS规范出台已经是很久的事情了，但是JMS在当今的J2EE应用中间仍然扮演着特殊的地位。
-具体使用可以看[ActiveMQ从入门到实践](http://catalinali.top/2017/useMQ/)
+具体使用可以看[ActiveMQ从入门到实践](https://blog.csdn.net/a3212/article/details/78873435)
